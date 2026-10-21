@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helpdesk - Gestión de tickets</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Gestión de tickets</h1>
+    <p>Mi primera aplicación</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>Crear ticket</h2>
+
+      <label for="titulo">Descripción del problema</label>
+      <input id="titulo" type="text"
+             placeholder="Ej. No puedo acceder al correo">
+      
+       <label for="prioridad">Prioridad</label>
+       <select id="prioridad">
+       <option value="Baja">Baja</option>
+       <option value="Media" selected>Media</option>
+      <option value="Alta">Alta</option>
+      </select>
+
+
+      <button id="crearTicket">Crear ticket</button>
+    </section>
+
+    <section class="panel">
+      <h2>Tickets registrados</h2>
+      <p id="contador">Tickets: 0</p>
+      <ul id="listaTickets"></ul>
+    </section>
+  </main>
+</body>
+</html>

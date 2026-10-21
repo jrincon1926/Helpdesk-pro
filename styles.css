@@ -1,0 +1,101 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f5f9;
+  color: #202939;
+}
+
+header {
+  background: #183153;
+  color: white;
+  padding: 24px;
+}
+
+header h1 {
+  margin-top: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.panel {
+  background: whitesmoke;
+  padding: 24px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+button {
+  background: #245bb5;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background: #183f80;
+}
+
+li {
+  padding: 14px;
+  margin-bottom: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: white;
+}
+Select {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background: white;
+}
+input:focus,
+select:focus {
+  outline: 2px solid #245bb5;
+  outline-offset: 2px;
+
+}
+
+@media (max-width: 600px) {
+  header{
+    padding: 16px;
+  }
+
+  header h1{
+    font-size: 28px;
+  }
+
+  main {
+    margin: 16px auto;
+    padding: 0 12px;
+  }
+  .panel {
+    padding: 16px;
+  }
+}
+
+button:focus-visible {
+  outline: 3px solid #183f80;
+  outline-offset: 3px;
+}
